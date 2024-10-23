@@ -1,3 +1,6 @@
+.ion-page, .ion-page ion-content {
+  --background: linear-gradient(to top right, purple, blue);
+}
 #container {
   text-align: center;
   position: absolute;
@@ -22,3 +25,49 @@
 #container a {
   text-decoration: none;
 }
+
+.custom-modal {
+  --background: transparent; /* Transparent background */
+  backdrop-filter: blur(10px)  !important;; /* Blurry effect */
+  --width:100% !important;
+  --height:100% !important;
+  position: fixed; /* Fixed to viewport */
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Make sure it's on top of other elements */
+}
+
+.custom-modal > *, .custom-modal> * > *{
+  background: transparent; /* Transparent background */
+  backdrop-filter: blur(10px); /* Blurry effect */
+}
+
+.modal-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.custom-modal ion-header, .custom-modal ion-content {
+  --ion-background-color: transparent !important;/* Transparent backgrounds */
+  backdrop-filter: blur(10px) !important; /* Blurry effect */
+}
+
+.custom-modal .ion-page, .custom-modal .ion-page ion-content {
+  --background: transparent !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.custom-modal ion-icon,
+.custom-modal ion-title,
+.custom-modal ion-button,
+.custom-modal ion-col  {
+  color: white;
+}
+
