@@ -1,0 +1,7 @@
+{
+  "name": "customized-modal",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
